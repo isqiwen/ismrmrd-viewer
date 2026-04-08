@@ -1,0 +1,230 @@
+# =============================================================================
+# Universal .gitignore template
+# C++ / Python / CMake / Make / GCC / Clang / Visual Studio
+#
+# Reusable baseline for cross-platform development:
+# - ignore generated files, caches, local IDE state, compiler outputs
+# - keep source-controlled build scripts and project metadata visible
+#
+# Intentionally NOT ignored:
+# - CMakeLists.txt
+# - CMakePresets.json
+# - Makefile / GNUmakefile
+# - pyproject.toml / setup.py / requirements*.txt
+# - .clang-format / .clang-tidy / .editorconfig
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# OS / filesystem noise
+# -----------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100/
+.Trashes/
+.fseventsd
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.directory
+.Trash-*/
+.fuse_hidden*
+.nfs*
+.apdisk
+
+# -----------------------------------------------------------------------------
+# Editor / IDE local state
+# -----------------------------------------------------------------------------
+.vs/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+
+# VS Code: ignore local state, allow shareable repo config when needed
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+*.code-workspace
+
+# Visual Studio user-specific state
+*.sln
+*.vcproj
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.vcxitems
+*.vcxitems.filters
+*.shproj
+*.suo
+*.user
+*.userosscache
+*.rsuser
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+*.VC.opendb
+*.opendb
+*.opensdf
+*.sdf
+*.ncb
+*.aps
+*.cachefile
+*.ipch
+ipch/
+*.tlog
+*.tlog/
+*.lastbuildstate
+*.unsuccessfulbuild
+
+# Xcode / macOS IDE user state
+DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcuserdatad/
+*.xcuserstate
+
+# -----------------------------------------------------------------------------
+# Local environment / secrets
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.py,cover
+.Python
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+__pypackages__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+.pytype/
+.dmypy.json
+dmypy.json
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+nosetests.xml
+.pybuild/
+site/
+dist/
+build/
+pip-wheel-metadata/
+.eggs/
+*.egg
+*.egg-info/
+*.whl
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# -----------------------------------------------------------------------------
+# CMake / Ninja / CTest / out-of-tree builds
+# -----------------------------------------------------------------------------
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Testing/Temporary/
+CTestTestfile.cmake
+DartConfiguration.tcl
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CMakeUserPresets.json
+CPackConfig.cmake
+CPackSourceConfig.cmake
+_CPack_Packages/
+build.ninja
+rules.ninja
+.ninja_log
+.ninja_deps
+cmake-build-*/
+build-*/
+_build/
+out/
+Debug/
+Release/
+RelWithDebInfo/
+MinSizeRel/
+x64/
+x86/
+Win32/
+ARM/
+ARM64/
+Generated Files/
+TestResults/
+
+# -----------------------------------------------------------------------------
+# C / C++ / GCC / Clang / LLVM / MSVC build outputs
+# -----------------------------------------------------------------------------
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.exp
+*.idb
+*.pdb
+*.ilk
+*.iobj
+*.ipdb
+*.pch
+*.gch
+*.d
+*.dwo
+*.dwp
+*.gcno
+*.gcda
+*.gcov
+*.gcov.json.gz
+*.profraw
+*.profdata
+*.dSYM/
+*.su
+*.sancov
+*.stackdump
+gmon.out
+core
+core.*
+vgcore.*
+scan-build/
+scan-build-*/
